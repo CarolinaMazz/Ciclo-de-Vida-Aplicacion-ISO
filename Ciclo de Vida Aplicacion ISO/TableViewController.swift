@@ -71,7 +71,10 @@ class TableViewController: UITableViewController {
                 })
                 //creamos la accion
                 let accionOK = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in
-                    print("aceptar")})
+                    //vemos el testo que se escriba en el alert
+                        let texto = alertControler.textFields?[0].text!
+                        print(texto!)
+                })
                 //asignamos la accion y motramos
                 alertControler.addAction(accionOK)
                 //mostramos el alert creado se presenta
@@ -82,10 +85,44 @@ class TableViewController: UITableViewController {
             print("Action Sheets")
             switch fila {
             case 0:
+                //definimos la alerta que se va a mostrar definimos un controler
+                alertControler=UIAlertController(title: "Action Sheets", message: "Simple", preferredStyle: UIAlertControllerStyle.actionSheet)
+                self.present(alertControler, animated: true, completion: {print("Action Sheets")})
                 print("simple")
             case 1:
+                //definimos la alerta que se va a mostrar definimos un controler
+                alertControler=UIAlertController(title: "Action Sheets", message: "Action Sheets con acciones", preferredStyle: UIAlertControllerStyle.actionSheet)
+                
+                let accionOk = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (accion) in })
+                
+                alertControler.addAction(accionOk)
+                
+                self.present(alertControler, animated: true, completion: {print("Action Sheets")})
                 print("con accion")
             default:
+                //cuando es para ipad hay que darle un origen
+                alertControler=UIAlertController(title: "Action Sheets", message: "Boton Cancelar", preferredStyle: UIAlertControllerStyle.actionSheet)
+                
+                let accionOK = UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.default, handler: { (accion) in
+                })
+                
+                let accionCancelar = UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.cancel, handler: { (UIAlertAction) in
+                })
+                
+                let accionEliminar = UIAlertAction(title: "Eliminar", style: UIAlertActionStyle.destructive, handler: { (UIAlertAction) in
+                })
+                
+                alertControler.addAction(accionOK)
+                alertControler.addAction(accionCancelar)
+                alertControler.addAction(accionEliminar)
+                
+                //modificacion para ipad dandole como origen al popover la celda donde seleccionamos
+                
+                alertControler.popoverPresentationController?.sourceView = tableView.cellForRow(at: indexPath)
+                
+                self.present(alertControler, animated: true, completion: { 
+                })
+                
                 print("cancelar")
             }
         }

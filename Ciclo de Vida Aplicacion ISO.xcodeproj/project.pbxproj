@@ -13,6 +13,7 @@
 		FBEEF8621E4D3DF70062E252 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBEEF8611E4D3DF70062E252 /* Assets.xcassets */; };
 		FBEEF8651E4D3DF70062E252 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBEEF8631E4D3DF70062E252 /* LaunchScreen.storyboard */; };
 		FBEEF86D1E4D41AC0062E252 /* SiguienteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEEF86C1E4D41AC0062E252 /* SiguienteViewController.swift */; };
+		FBEEF86F1E4D49600062E252 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEEF86E1E4D49600062E252 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FBEEF8641E4D3DF70062E252 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBEEF8661E4D3DF70062E252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBEEF86C1E4D41AC0062E252 /* SiguienteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SiguienteViewController.swift; sourceTree = "<group>"; };
+		FBEEF86E1E4D49600062E252 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FBEEF8631E4D3DF70062E252 /* LaunchScreen.storyboard */,
 				FBEEF8661E4D3DF70062E252 /* Info.plist */,
 				FBEEF86C1E4D41AC0062E252 /* SiguienteViewController.swift */,
+				FBEEF86E1E4D49600062E252 /* TableViewController.swift */,
 			);
 			path = "Ciclo de Vida Aplicacion ISO";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				FBEEF85D1E4D3DF70062E252 /* ViewController.swift in Sources */,
 				FBEEF86D1E4D41AC0062E252 /* SiguienteViewController.swift in Sources */,
 				FBEEF85B1E4D3DF70062E252 /* AppDelegate.swift in Sources */,
+				FBEEF86F1E4D49600062E252 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
